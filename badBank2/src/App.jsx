@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Navbar } from './componenets/Navbar'
+import { NavBar } from './componenets/Navbar'
 import { Home } from './pages/Home'
 import { Login } from './pages/Login'
 import { Createuser } from './pages/Createuser'
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={ <Login/> } />
